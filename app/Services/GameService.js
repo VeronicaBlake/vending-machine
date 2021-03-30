@@ -6,7 +6,8 @@ class GameService{
         ProxyState.totalAmount+=.25
     }
     buy(){
-        ProxyState.totalAmount - ProxyState.snacks.price
+       let newTotal = ProxyState.totalAmount - ProxyState.snacks.price
+       console.log(newTotal)
     }
 }
 

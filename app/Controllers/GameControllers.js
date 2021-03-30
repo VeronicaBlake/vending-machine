@@ -8,7 +8,7 @@ document.getElementById('totalamount').innerText = ProxyState.totalAmount.toFixe
 export default class GameController {
     constructor() {
         ProxyState.on('totalAmount', _draw);
-        ProxyState.on('snacks.price', _draw);
+        ProxyState.on('newTotal', _draw);
         _draw()
     }
     pay(){
