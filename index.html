@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>vending-machine</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
+            <a class="navbar-brand" href="#">
+                <span class="ml-2">vending-machine</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class = "container-fluid">
+        <div class = "row my-5">
+            <div class = "col-3 btn btn-primary" onclick = "app.gameController.pay()" id="money">Add Quarters</div>
+            <div class = "col-3 btn btn-warning" onclick = "app.gameController.buy()" id="candy">Buy Candy</div>
+            <div class = "col-3 btn btn-secondary" onclick = "app.gameController.buy()" id="chips">Buy Chips</div>
+            <div class = "col-3 btn btn-danger" onclick = "app.gameController.buy()" id="soda">Buy Soda</div>
+        </div>
+
+        <div class = "row text-center my-2">
+            <div class = "col"><h2>Total Money: <span id ='totalamount'>0</span></h2></div>
+        </div>
+        <div class = "row my-5">
+                <div class = "col">Candy: <span id ='totalcandy'>0</span></div>
+                <div class = "col">Chips: <span id ='totalchips'>0</span></div>
+                <div class = "col">Soda: <span id ='totalsoda'>0</span></div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="app/main.js" type="module"></script>
+</body>
